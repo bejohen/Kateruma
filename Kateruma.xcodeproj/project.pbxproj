@@ -12,6 +12,11 @@
 		0D250C9D231C17F600F468E1 /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250C99231C17F600F468E1 /* OrderListViewController.swift */; };
 		0D250C9E231C17F600F468E1 /* FirstTimeRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250C9A231C17F600F468E1 /* FirstTimeRegistrationViewController.swift */; };
 		0D250CA2231C1C5A00F468E1 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250CA1231C1C5A00F468E1 /* RestaurantModel.swift */; };
+		0D250CA4231C1D0600F468E1 /* MakananViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250CA3231C1D0600F468E1 /* MakananViewController.swift */; };
+		0D250CAD231C288200F468E1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250CAB231C288200F468E1 /* CategoryCell.swift */; };
+		0D250CAE231C288200F468E1 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D250CAC231C288200F468E1 /* CategoryCell.xib */; };
+		0D250CB1231C28CB00F468E1 /* ItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250CAF231C28CB00F468E1 /* ItemCollectionCell.swift */; };
+		0D250CB2231C28CB00F468E1 /* ItemCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D250CB0231C28CB00F468E1 /* ItemCollectionCell.xib */; };
 		1BE62534231788CD007F9704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62533231788CD007F9704 /* AppDelegate.swift */; };
 		1BE62536231788CD007F9704 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62535231788CD007F9704 /* ProfilViewController.swift */; };
 		1BE62539231788CD007F9704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE62537231788CD007F9704 /* Main.storyboard */; };
@@ -25,6 +30,11 @@
 		0D250C99231C17F600F468E1 /* OrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
 		0D250C9A231C17F600F468E1 /* FirstTimeRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTimeRegistrationViewController.swift; sourceTree = "<group>"; };
 		0D250CA1231C1C5A00F468E1 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		0D250CA3231C1D0600F468E1 /* MakananViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakananViewController.swift; sourceTree = "<group>"; };
+		0D250CAB231C288200F468E1 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		0D250CAC231C288200F468E1 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		0D250CAF231C28CB00F468E1 /* ItemCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionCell.swift; sourceTree = "<group>"; };
+		0D250CB0231C28CB00F468E1 /* ItemCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCollectionCell.xib; sourceTree = "<group>"; };
 		1BE62530231788CD007F9704 /* Kateruma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kateruma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE62533231788CD007F9704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE62535231788CD007F9704 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
@@ -48,11 +58,10 @@
 		0D250C9F231C1C1600F468E1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0D250C9A231C17F600F468E1 /* FirstTimeRegistrationViewController.swift */,
-				0D250C98231C17F600F468E1 /* RegistrationViewController.swift */,
-				0D250C97231C17F500F468E1 /* OrderListTableViewController.swift */,
-				0D250C99231C17F600F468E1 /* OrderListViewController.swift */,
-				1BE62535231788CD007F9704 /* ProfilViewController.swift */,
+				0D250CA5231C1D2200F468E1 /* Makanan */,
+				0D250CA6231C1D4900F468E1 /* Order */,
+				0D250CA7231C1D5200F468E1 /* Notification */,
+				0D250CA8231C1D5900F468E1 /* Profile */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -63,6 +72,52 @@
 				0D250CA1231C1C5A00F468E1 /* RestaurantModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0D250CA5231C1D2200F468E1 /* Makanan */ = {
+			isa = PBXGroup;
+			children = (
+				0D250CB3231C294700F468E1 /* Cell */,
+				0D250CA3231C1D0600F468E1 /* MakananViewController.swift */,
+			);
+			path = Makanan;
+			sourceTree = "<group>";
+		};
+		0D250CA6231C1D4900F468E1 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		0D250CA7231C1D5200F468E1 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		0D250CA8231C1D5900F468E1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1BE62535231788CD007F9704 /* ProfilViewController.swift */,
+				0D250C9A231C17F600F468E1 /* FirstTimeRegistrationViewController.swift */,
+				0D250C98231C17F600F468E1 /* RegistrationViewController.swift */,
+				0D250C99231C17F600F468E1 /* OrderListViewController.swift */,
+				0D250C97231C17F500F468E1 /* OrderListTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0D250CB3231C294700F468E1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0D250CAF231C28CB00F468E1 /* ItemCollectionCell.swift */,
+				0D250CB0231C28CB00F468E1 /* ItemCollectionCell.xib */,
+				0D250CAB231C288200F468E1 /* CategoryCell.swift */,
+				0D250CAC231C288200F468E1 /* CategoryCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1BE62527231788CD007F9704 = {
@@ -154,8 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE6253E231788CE007F9704 /* LaunchScreen.storyboard in Resources */,
+				0D250CB2231C28CB00F468E1 /* ItemCollectionCell.xib in Resources */,
 				1BE6253B231788CE007F9704 /* Assets.xcassets in Resources */,
 				1BE62539231788CD007F9704 /* Main.storyboard in Resources */,
+				0D250CAE231C288200F468E1 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,10 +226,13 @@
 				0D250C9C231C17F600F468E1 /* RegistrationViewController.swift in Sources */,
 				0D250C9D231C17F600F468E1 /* OrderListViewController.swift in Sources */,
 				0D250CA2231C1C5A00F468E1 /* RestaurantModel.swift in Sources */,
+				0D250CA4231C1D0600F468E1 /* MakananViewController.swift in Sources */,
+				0D250CB1231C28CB00F468E1 /* ItemCollectionCell.swift in Sources */,
 				0D250C9B231C17F600F468E1 /* OrderListTableViewController.swift in Sources */,
 				0D250C9E231C17F600F468E1 /* FirstTimeRegistrationViewController.swift in Sources */,
 				1BE62536231788CD007F9704 /* ProfilViewController.swift in Sources */,
 				1BE62534231788CD007F9704 /* AppDelegate.swift in Sources */,
+				0D250CAD231C288200F468E1 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

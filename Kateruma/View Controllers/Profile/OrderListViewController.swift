@@ -29,6 +29,7 @@ class OrderListViewController: UIViewController {
         
 //        segmentedView.removeBorders()
     }
+  
     @IBAction func switchView(_ sender: UISegmentedControl) {
 
         if sender.selectedSegmentIndex == 0 {

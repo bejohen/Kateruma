@@ -17,7 +17,8 @@ class ProfilViewController: UIViewController {
         
         profilePicture.layer.masksToBounds = true
         profilePicture.layer.borderColor = UIColor.black.cgColor
-        profilePicture.layer.cornerRadius = (profilePicture.frame.width/2)    }
+        profilePicture.layer.cornerRadius = (profilePicture.frame.width/2)
+  }
 
 
 }
