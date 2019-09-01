@@ -13,6 +13,8 @@ class ItemCollectionCell: UICollectionViewCell {
   @IBOutlet weak var cellImageView: UIImageView!
   @IBOutlet weak var productNameLabel: UILabel!
   @IBOutlet weak var productPriceLabel: UILabel!
+  @IBOutlet weak var rateLabel: UILabel!
+  @IBOutlet weak var rateBorder: UIView!
   
   var id: Int?
   var products: Product?
@@ -35,6 +37,11 @@ class ItemCollectionCell: UICollectionViewCell {
     self.layer.masksToBounds = false
     self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
     
+    self.rateBorder.layer.cornerRadius = 4.0
+    self.rateBorder.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+    self.rateBorder.layer.shadowRadius = 1.0
+    self.rateBorder.layer.shadowOpacity = 0.2
+    
     self.cellImageView.contentMode = UIView.ContentMode.scaleAspectFill
     self.cellImageView.layer.cornerRadius = 10.0
   }
@@ -43,6 +50,7 @@ class ItemCollectionCell: UICollectionViewCell {
     self.productNameLabel.text = product.productName
     self.productPriceLabel.text = "Rp.\(product.price)"
     self.cellImageView.image = UIImage(named: product.productName)
+    self.rateLabel.text = product.ratingTotal
   }
   
 }
