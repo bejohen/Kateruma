@@ -32,9 +32,9 @@ class RestaurantViewController: UIViewController {
       for i in 0..<imageCounter {
         imageArray.append(UIImage(named: restaurant.photograph[i])!)
       }
-      restaurantImageView.image = imageArray[0]
+      //restaurantImageView.image = imageArray[0]
       
-      self.restaurantNameLabel.text = restaurant.name
+      //self.restaurantNameLabel.text = restaurant.name
       //self.restaurantImageView.image = UIImage(named: imageTitle)
     }
   }

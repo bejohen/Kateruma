@@ -30,6 +30,16 @@ extension SwipingController{
       pageControlView.currentPage = nextIndex
         
       collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        
+        if indexPath.item == 4 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "start") as! UITabBarController
+            self.present( vc, animated: true, completion: nil)
+//            let delegate = UIApplication.shared.delegate as? AppDelegate
+//            delegate?.onboardingStatus = false
+//            delegate?.window?.rootViewController = vc
+            print("terkirim")
+        }
     }
     
     

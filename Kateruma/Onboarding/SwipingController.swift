@@ -21,7 +21,9 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         Page(imageName: "buatkue", headerText: "Selamat datang di Kateruma!", bodyText: "Kateruma merupakan aplikasi untuk membantu anda menemukan makanan rumah yang dibuat langsung dari dapur pribadi mereka."),
         Page(imageName: "makankeluarga", headerText: "Kreasikan menu anda dan keluarga", bodyText: "Tentukan waktu pengiriman makanan anda secara fleksibel untuk kreasi makanan anda setiap harinya."),
         Page(imageName: "sepeda", headerText: "Biaya kirim tetap terjangkau", bodyText: "Untuk menjamin biaya kirim tetap rendah, kami membantu anda menemukan makanan rumah terdekat dari jarak yang anda tentukan."),
+        Page(imageName: "dapur", headerText: "Sistem penilaian dan rekomendasi dapur yang terpercaya", bodyText: "Dengan sistem penilaian dan rekomendasi, kami membantu anda menemukan makanan rumah yang paling cocok untuk selera anda."),
         Page(imageName: "dapur", headerText: "Sistem penilaian dan rekomendasi dapur yang terpercaya", bodyText: "Dengan sistem penilaian dan rekomendasi, kami membantu anda menemukan makanan rumah yang paling cocok untuk selera anda.")
+
     ]
     
     let previousButton: UIButton = {
@@ -51,7 +53,7 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
     lazy var pageControlView: UIPageControl = {
         let pageControl = UIPageControl()
         pageControl.currentPage = 0
-        pageControl.numberOfPages = pages.count
+        pageControl.numberOfPages = pages.count - 1
         pageControl.currentPageIndicatorTintColor = .darkGreen
         pageControl.pageIndicatorTintColor = .mainColourFade
         return pageControl

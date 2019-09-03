@@ -21,8 +21,8 @@ class MakananViewController: UIViewController {
   
   var window : UIWindow?
   
-  var ipPort = "10.60.40.56"
-  //var ipPort = "10.60.49.157"
+  //var ipPort = "10.60.40.56"
+  var ipPort = "10.60.49.157"
   
   override func viewDidLoad() {
     super.viewDidLoad()
