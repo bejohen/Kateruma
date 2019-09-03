@@ -24,17 +24,24 @@ class MakananViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    if !onboardingStatus {
-      
-      window = UIWindow()
-      window?.makeKeyAndVisible()
-      let layout = UICollectionViewFlowLayout()
-      layout.scrollDirection = .horizontal
-      let swipingController = SwipingController(collectionViewLayout: layout)
-      window?.rootViewController = swipingController
-    }
+//    if !onboardingStatus {
+//      
+//      window = UIWindow()
+//      window?.makeKeyAndVisible()
+//      let layout = UICollectionViewFlowLayout()
+//      layout.scrollDirection = .horizontal
+//      let swipingController = SwipingController(collectionViewLayout: layout)
+//      window?.rootViewController = swipingController
+//    onboardingStatus = true
+//    print("kesini lgi")
+//    }
+    
+    
     
     self.navigationController?.isNavigationBarHidden = true
+    getRestaurantData {
+        self.configureTableView()
+    }
     
   }
   
@@ -45,7 +52,7 @@ class MakananViewController: UIViewController {
   }
   
   func getRestaurantData(completionHandler: @escaping () -> Void) {
-    let url = "http://127.0.0.1:3000/restaurants"
+    let url = "http://10.60.49.157:3000/restaurants"
     guard let restoUrl = URL(string: url) else { return }
     URLSession.shared.dataTask(with: restoUrl) { (data, response
       , error) in
