@@ -17,9 +17,28 @@ class MakananViewController: UIViewController {
   
   var restaurants: [Restaurant] = []
   
+  var onboardingStatus = false
+  
+  var window : UIWindow?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    if !onboardingStatus {
+      
+      window = UIWindow()
+      window?.makeKeyAndVisible()
+      let layout = UICollectionViewFlowLayout()
+      layout.scrollDirection = .horizontal
+      let swipingController = SwipingController(collectionViewLayout: layout)
+      window?.rootViewController = swipingController
+    }
+    
     self.navigationController?.isNavigationBarHidden = true
+    
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
     getRestaurantData {
       self.configureTableView()
     }
@@ -51,6 +70,7 @@ class MakananViewController: UIViewController {
   func configureTableView() {
     
     menuItemTableView.rowHeight = 310
+    menuItemTableView.estimatedRowHeight = 310
     menuItemTableView.delegate = self
     menuItemTableView.dataSource = self
     menuItemTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
@@ -63,6 +83,17 @@ extension MakananViewController: UITableViewDelegate, UITableViewDataSource {
   
   func numberOfSections(in tableView: UITableView) -> Int {
     return 2
+  }
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    switch indexPath.section {
+    case 0:
+      return 310
+    case 1:
+      return 310
+    default:
+      return 0
+    }
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

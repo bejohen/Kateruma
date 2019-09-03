@@ -13,8 +13,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+  var onboardingStatus = true
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+      
+      if !onboardingStatus {
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let swipingController = SwipingController(collectionViewLayout: layout)
+        //        randomViewController.view.backgroundColor = .purple
+        
+        window?.rootViewController = swipingController
+        
+        onboardingStatus = true
+      }
+      
         // Override point for customization after application launch.
         return true
     }

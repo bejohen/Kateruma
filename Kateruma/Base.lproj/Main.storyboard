@@ -53,7 +53,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="pxK-3x-a2d">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0TB-dg-lFD" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="start" automaticallyAdjustsScrollViewInsets="NO" id="0TB-dg-lFD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ijR-pa-mXP">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -161,25 +161,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29P-xE-ZbW">
-                                                    <rect key="frame" x="20" y="25" width="38" height="14"/>
+                                                    <rect key="frame" x="20" y="11" width="38" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.27379471059999999" green="0.33961981530000002" blue="0.11366590109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image chef" translatesAutoresizingMaskIntoConstraints="NO" id="wNT-Tn-lhx">
-                                                    <rect key="frame" x="323" y="6" width="71" height="92"/>
+                                                    <rect key="frame" x="323" y="6" width="71" height="64"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="71" id="J7y-HW-0wY"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makanan anda sudah tiba di tujuan!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdr-DZ-Yx2">
-                                                    <rect key="frame" x="20" y="62" width="271" height="9"/>
+                                                    <rect key="frame" x="20" y="48" width="271" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dapur Yuli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpA-u0-2B1">
-                                                    <rect key="frame" x="20" y="42" width="92" height="20"/>
+                                                    <rect key="frame" x="20" y="28" width="92" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="HEm-jj-Fsk"/>
                                                     </constraints>
@@ -188,7 +188,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 September 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbQ-0o-5oL">
-                                                    <rect key="frame" x="66" y="13" width="94" height="26"/>
+                                                    <rect key="frame" x="66" y="13" width="94" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="0.66275417800000003" green="0.66272872689999995" blue="0.66274601219999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -230,25 +230,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6s-GG-k8H">
-                                                    <rect key="frame" x="20" y="25" width="38" height="14"/>
+                                                    <rect key="frame" x="20" y="11" width="38" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.27379471059999999" green="0.33961981530000002" blue="0.11366590109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image chef" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-oN-BIC">
-                                                    <rect key="frame" x="323" y="6" width="71" height="92"/>
+                                                    <rect key="frame" x="323" y="6" width="71" height="64"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="71" id="12z-h9-qHY"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makanan anda sudah tiba di tujuan!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acz-Z0-PMv">
-                                                    <rect key="frame" x="20" y="62" width="271" height="9"/>
+                                                    <rect key="frame" x="20" y="48" width="271" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dapur Yuli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMH-pC-c9R">
-                                                    <rect key="frame" x="20" y="42" width="92" height="20"/>
+                                                    <rect key="frame" x="20" y="28" width="92" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="nBM-0d-dUF"/>
                                                     </constraints>
@@ -257,7 +257,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 September 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAx-Oy-GaT">
-                                                    <rect key="frame" x="66" y="13" width="94" height="26"/>
+                                                    <rect key="frame" x="66" y="13" width="94" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="0.66275417800000003" green="0.66272872689999995" blue="0.66274601219999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -299,25 +299,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVt-ct-eQ5">
-                                                    <rect key="frame" x="20" y="25" width="38" height="14"/>
+                                                    <rect key="frame" x="20" y="11" width="38" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.27379471059999999" green="0.33961981530000002" blue="0.11366590109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image chef" translatesAutoresizingMaskIntoConstraints="NO" id="LrA-Fc-HMT">
-                                                    <rect key="frame" x="323" y="6" width="71" height="92"/>
+                                                    <rect key="frame" x="323" y="6" width="71" height="64"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="71" id="FYY-8P-y7S"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makanan anda sudah tiba di tujuan!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfF-5y-FCL">
-                                                    <rect key="frame" x="20" y="62" width="271" height="9"/>
+                                                    <rect key="frame" x="20" y="48" width="271" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dapur Yuli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEk-IX-4J7">
-                                                    <rect key="frame" x="20" y="42" width="92" height="20"/>
+                                                    <rect key="frame" x="20" y="28" width="92" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="yja-Tf-8Ft"/>
                                                     </constraints>
@@ -326,7 +326,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 September 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPR-n2-a9n">
-                                                    <rect key="frame" x="66" y="13" width="94" height="26"/>
+                                                    <rect key="frame" x="66" y="13" width="94" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="0.66275417800000003" green="0.66272872689999995" blue="0.66274601219999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -368,25 +368,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKM-HO-6S6">
-                                                    <rect key="frame" x="20" y="25" width="38" height="14"/>
+                                                    <rect key="frame" x="20" y="11" width="38" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.27379471059999999" green="0.33961981530000002" blue="0.11366590109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image chef" translatesAutoresizingMaskIntoConstraints="NO" id="Yer-JU-zfn">
-                                                    <rect key="frame" x="323" y="6" width="71" height="92"/>
+                                                    <rect key="frame" x="323" y="6" width="71" height="64"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="71" id="pBs-5J-BrT"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makanan anda sudah tiba di tujuan!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yu-KU-AUx">
-                                                    <rect key="frame" x="20" y="62" width="271" height="9"/>
+                                                    <rect key="frame" x="20" y="48" width="271" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dapur Yuli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0J-Sc-RAb">
-                                                    <rect key="frame" x="20" y="42" width="92" height="20"/>
+                                                    <rect key="frame" x="20" y="28" width="92" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="6lT-ro-ju8"/>
                                                     </constraints>
@@ -395,7 +395,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 September 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdD-rZ-OqD">
-                                                    <rect key="frame" x="66" y="13" width="94" height="26"/>
+                                                    <rect key="frame" x="66" y="13" width="94" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="0.66275417800000003" green="0.66272872689999995" blue="0.66274601219999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -437,25 +437,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W3-su-Jaz">
-                                                    <rect key="frame" x="20" y="25" width="38" height="14"/>
+                                                    <rect key="frame" x="20" y="11" width="38" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.27379471059999999" green="0.33961981530000002" blue="0.11366590109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image chef" translatesAutoresizingMaskIntoConstraints="NO" id="leG-b0-V2e">
-                                                    <rect key="frame" x="323" y="6" width="71" height="92"/>
+                                                    <rect key="frame" x="323" y="6" width="71" height="64"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="71" id="Nxi-Vv-JIX"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makanan anda sudah tiba di tujuan!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijc-Lt-MhS">
-                                                    <rect key="frame" x="20" y="62" width="271" height="9"/>
+                                                    <rect key="frame" x="20" y="48" width="271" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dapur Yuli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyN-6W-99T">
-                                                    <rect key="frame" x="20" y="42" width="92" height="20"/>
+                                                    <rect key="frame" x="20" y="28" width="92" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="hpG-Lp-66N"/>
                                                     </constraints>
@@ -464,7 +464,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 September 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7B-Sg-vLc">
-                                                    <rect key="frame" x="66" y="13" width="94" height="26"/>
+                                                    <rect key="frame" x="66" y="13" width="94" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="0.66275417800000003" green="0.66272872689999995" blue="0.66274601219999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
