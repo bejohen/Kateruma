@@ -23,6 +23,7 @@
 		0D250CBE231CC24F00F468E1 /* SwipingController + UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250CB8231CC24F00F468E1 /* SwipingController + UICollectionView.swift */; };
 		0D250CBF231CC24F00F468E1 /* SwipingController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250CB9231CC24F00F468E1 /* SwipingController + extension.swift */; };
 		0D250CC0231CC24F00F468E1 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250CBA231CC24F00F468E1 /* PageCell.swift */; };
+		0D250CC2231E326700F468E1 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D250CC1231E326700F468E1 /* RestaurantViewController.swift */; };
 		1BE62534231788CD007F9704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62533231788CD007F9704 /* AppDelegate.swift */; };
 		1BE62536231788CD007F9704 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62535231788CD007F9704 /* ProfilViewController.swift */; };
 		1BE62539231788CD007F9704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE62537231788CD007F9704 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		0D250CB8231CC24F00F468E1 /* SwipingController + UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipingController + UICollectionView.swift"; sourceTree = "<group>"; };
 		0D250CB9231CC24F00F468E1 /* SwipingController + extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipingController + extension.swift"; sourceTree = "<group>"; };
 		0D250CBA231CC24F00F468E1 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		0D250CC1231E326700F468E1 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		1BE62530231788CD007F9704 /* Kateruma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kateruma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE62533231788CD007F9704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE62535231788CD007F9704 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				0D250CA3231C1D0600F468E1 /* MakananViewController.swift */,
+				0D250CC1231E326700F468E1 /* RestaurantViewController.swift */,
 				0D250CB3231C294700F468E1 /* Cell */,
 			);
 			path = Makanan;
@@ -259,6 +262,7 @@
 				0D250C9B231C17F600F468E1 /* OrderListTableViewController.swift in Sources */,
 				0D250CBF231CC24F00F468E1 /* SwipingController + extension.swift in Sources */,
 				0D250C9E231C17F600F468E1 /* FirstTimeRegistrationViewController.swift in Sources */,
+				0D250CC2231E326700F468E1 /* RestaurantViewController.swift in Sources */,
 				1BE62536231788CD007F9704 /* ProfilViewController.swift in Sources */,
 				1BE62534231788CD007F9704 /* AppDelegate.swift in Sources */,
 				0D250CBE231CC24F00F468E1 /* SwipingController + UICollectionView.swift in Sources */,
