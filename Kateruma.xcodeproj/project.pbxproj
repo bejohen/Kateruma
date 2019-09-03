@@ -89,8 +89,8 @@
 		0D250CA5231C1D2200F468E1 /* Makanan */ = {
 			isa = PBXGroup;
 			children = (
-				0D250CB3231C294700F468E1 /* Cell */,
 				0D250CA3231C1D0600F468E1 /* MakananViewController.swift */,
+				0D250CB3231C294700F468E1 /* Cell */,
 			);
 			path = Makanan;
 			sourceTree = "<group>";

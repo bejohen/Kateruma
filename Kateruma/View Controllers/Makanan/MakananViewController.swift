@@ -21,10 +21,13 @@ class MakananViewController: UIViewController {
   
   var window : UIWindow?
   
+  var ipPort = "10.60.40.56"
+  //var ipPort = "10.60.49.157"
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    if !onboardingStatus {
+    if onboardingStatus {
       
       window = UIWindow()
       window?.makeKeyAndVisible()
@@ -36,16 +39,13 @@ class MakananViewController: UIViewController {
     
     self.navigationController?.isNavigationBarHidden = true
     
-  }
-  
-  override func viewWillAppear(_ animated: Bool) {
     getRestaurantData {
       self.configureTableView()
     }
   }
   
   func getRestaurantData(completionHandler: @escaping () -> Void) {
-    let url = "http://127.0.0.1:3000/restaurants"
+    let url = "http://\(ipPort):3000/restaurants"
     guard let restoUrl = URL(string: url) else { return }
     URLSession.shared.dataTask(with: restoUrl) { (data, response
       , error) in
