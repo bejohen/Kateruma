@@ -620,6 +620,10 @@ Ibu Yuli</string>
                                                     <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favorite user icon" translatesAutoresizingMaskIntoConstraints="NO" id="Wg3-cX-eJF">
+                                                    <rect key="frame" x="371" y="21" width="24" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -648,7 +652,7 @@ Ibu Yuli</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC0-5a-LMD">
-                                                    <rect key="frame" x="20" y="11" width="222" height="41"/>
+                                                    <rect key="frame" x="20" y="11" width="385" height="41"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="24"/>
                                                     <state key="normal" title="Menjadi Seller">
@@ -658,6 +662,10 @@ Ibu Yuli</string>
                                                         <segue destination="p4Y-b3-Heq" kind="showDetail" identifier="aa" id="MMP-Oi-Jdz"/>
                                                     </connections>
                                                 </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menjadi seller icon" translatesAutoresizingMaskIntoConstraints="NO" id="l6m-rP-GEa">
+                                                    <rect key="frame" x="370" y="19" width="25" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -697,7 +705,7 @@ Ibu Yuli</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqF-mE-ADn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="1235"/>
+            <point key="canvasLocation" x="1861.594202898551" y="1234.4866071428571"/>
         </scene>
         <!--First Time Registration View Controller-->
         <scene sceneID="3PN-nz-C5n">
@@ -1964,7 +1972,7 @@ Ibu Yuli</string>
         <scene sceneID="qDz-3K-hLC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nVV-lc-WKF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Order" image="home icon" landscapeImage="home icon" largeContentSizeImage="home icon" selectedImage="home icon Selected" id="kZL-wO-40t"/>
+                    <tabBarItem key="tabBarItem" title="Order" image="order seller icon" landscapeImage="order seller icon" largeContentSizeImage="order seller icon" selectedImage="order seller icon Selected" id="kZL-wO-40t"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nMV-Zr-1pf">
                         <rect key="frame" x="0.0" y="44" width="415" height="44"/>
@@ -2029,17 +2037,17 @@ Ibu Yuli</string>
                                 <color key="textColor" red="0.25490196079999999" green="0.3411764706" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image chef" translatesAutoresizingMaskIntoConstraints="NO" id="BtH-KY-Ncm">
+                                <rect key="frame" x="297" y="81" width="88" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yuli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEo-r0-Yqs">
-                                <rect key="frame" x="320" y="177" width="27" height="21"/>
+                                <rect key="frame" x="328" y="177" width="27" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image chef" translatesAutoresizingMaskIntoConstraints="NO" id="BtH-KY-Ncm">
-                                <rect key="frame" x="297" y="81" width="88" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
@@ -2053,7 +2061,7 @@ Ibu Yuli</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCG-Mf-pRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5792" y="2517"/>
+            <point key="canvasLocation" x="5790.579710144928" y="2516.8526785714284"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="wQh-aT-9M9">
@@ -2189,11 +2197,11 @@ Ibu Yuli</string>
             <objects>
                 <viewController id="kG1-n0-yiK" customClass="MenuViewController" customModule="Kateruma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K4R-rJ-1ol">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="699"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs7-DE-bMa">
-                                <rect key="frame" x="1" y="44" width="414" height="44"/>
+                                <rect key="frame" x="1" y="44" width="415" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Menu Anda" largeTitleDisplayMode="always" id="NzP-yd-aIO"/>
@@ -2259,7 +2267,7 @@ yang saya buat. Dijamin uenak!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rpo-6b-ir3">
-                                <rect key="frame" x="0.0" y="299" width="415" height="640"/>
+                                <rect key="frame" x="0.0" y="102" width="416" height="640"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="ZC3-k6-aqw" kind="embed" id="tbr-cf-HPL"/>
@@ -2288,7 +2296,7 @@ yang saya buat. Dijamin uenak!</string>
                         <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
                         <viewLayoutGuide key="safeArea" id="K1X-47-FQz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Menu" image="Menu Icon" landscapeImage="Menu Icon" largeContentSizeImage="Menu Icon" selectedImage="Menu Icon" id="iJ6-mW-N1L"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="menu icon" landscapeImage="menu icon" largeContentSizeImage="menu icon" selectedImage="menu icon Selected" id="iJ6-mW-N1L"/>
                     <navigationItem key="navigationItem" title="Title" id="DDq-Vp-CBv"/>
                     <connections>
                         <outlet property="profileImage" destination="Wgx-C3-8NT" id="vNY-Vo-jpg"/>
@@ -3066,28 +3074,33 @@ Baluran tepung dipadu dengan saus yang nikmat</string>
     <resources>
         <image name="Foto Makanan" width="69" height="69"/>
         <image name="Map icon" width="85" height="82"/>
-        <image name="Menu Icon" width="36" height="36"/>
         <image name="back" width="13" height="6"/>
         <image name="back button" width="28" height="28"/>
         <image name="buttonikuti" width="103" height="43"/>
         <image name="buttonpesan" width="84" height="41"/>
         <image name="buttontanya" width="103" height="43"/>
         <image name="editbutton" width="84" height="41"/>
+        <image name="favorite user icon" width="25" height="23"/>
         <image name="favoriteicon" width="16" height="15"/>
         <image name="home" width="5472" height="3080"/>
-        <image name="home icon" width="35" height="35"/>
-        <image name="home icon Selected" width="35" height="35"/>
+        <image name="home icon" width="31" height="31"/>
+        <image name="home icon Selected" width="32" height="32"/>
         <image name="image" width="134" height="96"/>
         <image name="image chef" width="92" height="92"/>
+        <image name="menjadi seller icon" width="35" height="35"/>
+        <image name="menu icon" width="36" height="36"/>
+        <image name="menu icon Selected" width="36" height="36"/>
         <image name="mother" width="513" height="509"/>
         <image name="mother-circle" width="503" height="503"/>
         <image name="nextbutton" width="10" height="16"/>
-        <image name="notification icon" width="35" height="35"/>
-        <image name="notification icon Selected" width="31" height="31"/>
-        <image name="order icon" width="38" height="38"/>
-        <image name="order icon Selected" width="33" height="33"/>
+        <image name="notification icon" width="31" height="31"/>
+        <image name="notification icon Selected" width="32" height="32"/>
+        <image name="order icon" width="33" height="33"/>
+        <image name="order icon Selected" width="34" height="34"/>
+        <image name="order seller icon" width="35" height="35"/>
+        <image name="order seller icon Selected" width="31" height="31"/>
         <image name="plusbutton" width="20" height="20"/>
-        <image name="profil icon" width="35" height="35"/>
+        <image name="profil icon" width="31" height="31"/>
         <image name="profil icon Selected" width="31" height="31"/>
         <image name="rating" width="91" height="16"/>
         <image name="scooter" width="512" height="512"/>
@@ -3096,7 +3109,7 @@ Baluran tepung dipadu dengan saus yang nikmat</string>
         <image name="to-do-mothers-day-1553102880" width="640" height="634"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FOl-ZH-eCM"/>
+        <segue reference="tBW-B9-7zg"/>
         <segue reference="MMP-Oi-Jdz"/>
     </inferredMetricsTieBreakers>
 </document>

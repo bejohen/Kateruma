@@ -2,25 +2,22 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "notif-icon-2.png",
+      "filename" : "cooking.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "notif-icon-02@2x.png",
+      "filename" : "cooking@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "notif-icon-02@3x.png",
+      "filename" : "cooking@3x.png",
       "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
     "author" : "xcode"
-  },
-  "properties" : {
-    "template-rendering-intent" : "original"
   }
 }
