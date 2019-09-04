@@ -113,8 +113,11 @@ extension MakananViewController: UITableViewDelegate, UITableViewDataSource {
     switch indexPath.section {
     case 0:
       let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
-      let resto = self.restaurants[0]
-      cell.updateCellWith(restaurant: resto)
+      var resto: [Restaurant]? = []
+      resto?.append(self.restaurants[0])
+      resto?.append(self.restaurants[1])
+      print("ini resto: \(String(describing: resto))")
+      cell.updateCellWith(restaurant: resto!)
       cell.cellDelegate = self
       
       cell.headerLabel.text = "Jarak berjalan"
@@ -127,8 +130,11 @@ extension MakananViewController: UITableViewDelegate, UITableViewDataSource {
       return cell
     case 1:
       let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
-      let resto = self.restaurants[1]
-      cell.updateCellWith(restaurant: resto)
+      var resto: [Restaurant]? = []
+      resto?.append(self.restaurants[2])
+      resto?.append(self.restaurants[3])
+      print("ini resto: \(String(describing: resto))")
+      cell.updateCellWith(restaurant: resto!)
       cell.cellDelegate = self
       
       cell.headerLabel.text = "Makanan rumah dekat anda"

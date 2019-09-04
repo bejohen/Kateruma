@@ -22,6 +22,8 @@ class RestaurantDetailTableViewCell: UITableViewCell {
   
   @IBOutlet weak var ownerImageView: UIImageView!
   
+  @IBOutlet weak var ownerNameLabel: UILabel!
+  
   var resto: Restaurant?
   
   class var CustomCell : RestaurantDetailTableViewCell {
@@ -45,7 +47,8 @@ class RestaurantDetailTableViewCell: UITableViewCell {
     
     self.ongkirLabel.text = "Ongkos kirim: 0 - Rp10.000"
     
-    self.ownerImageView.image = UIImage(named: "")
+    self.ownerImageView.image = UIImage(named: restaurant.ownerPhoto)
+    self.ownerNameLabel.text = restaurant.owner
   }
   
 }

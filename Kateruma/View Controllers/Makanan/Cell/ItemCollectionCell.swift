@@ -49,7 +49,7 @@ class ItemCollectionCell: UICollectionViewCell {
   func updateCellWithImage(product: Product) {
     self.productNameLabel.text = product.productName
     self.productPriceLabel.text = "Rp.\(product.price)"
-    self.cellImageView.image = UIImage(named: product.productName)
+    self.cellImageView.image = UIImage(named: product.photograph[0])
     self.rateLabel.text = product.ratingTotal
   }
   

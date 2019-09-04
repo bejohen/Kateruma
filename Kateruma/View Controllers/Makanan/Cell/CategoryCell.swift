@@ -21,7 +21,9 @@ class CategoryCell: UITableViewCell, UICollectionViewDataSource, UICollectionVie
   @IBOutlet weak var descLabel: UILabel!
   @IBOutlet weak var categoryCollectionView: UICollectionView!
   
-  var restaurants: Restaurant?
+  var restaurants: [Restaurant]? = []
+  
+  var products: [Product]? = []
   
   //var aCategory:ImageCategory?
   let cellReuseId = "ItemCollectionCell"
@@ -53,9 +55,15 @@ class CategoryCell: UITableViewCell, UICollectionViewDataSource, UICollectionVie
 
   }
   
-  func updateCellWith(restaurant:Restaurant) {
-    self.restaurants = restaurant
-    print(self.restaurants!)
+  func updateCellWith(restaurant:[Restaurant]) {
+    self.restaurants? = restaurant
+    //print(self.restaurants!)
+    for resto in restaurants! {
+      for i in 0..<resto.products.count {
+        products?.append(resto.products[i])
+      }
+    }
+    print(self.products!)
     self.categoryCollectionView.reloadData()
   }
   
@@ -66,11 +74,7 @@ class CategoryCell: UITableViewCell, UICollectionViewDataSource, UICollectionVie
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    if let categoryItems = self.restaurants?.products {
-      return categoryItems.count
-    } else {
-      return 0
-    }
+    return products?.count ?? 0
   }
   
   func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -80,10 +84,9 @@ class CategoryCell: UITableViewCell, UICollectionViewDataSource, UICollectionVie
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseId, for: indexPath) as? ItemCollectionCell
-    if let product = self.restaurants?.products[indexPath.item] {
-      cell?.updateCellWithImage(product: product)
-      cell?.id = product.restaurantID
-    }
+    let product = self.products![indexPath.item]
+    cell?.updateCellWithImage(product: product)
+    cell?.id = product.restaurantID
     return cell!
   }
   
