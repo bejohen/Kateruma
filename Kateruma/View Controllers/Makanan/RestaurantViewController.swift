@@ -50,6 +50,8 @@ class RestaurantViewController: UIViewController {
     restoranTableView.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
     
     restoranTableView.register(UINib(nibName: "RestaurantDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "RestaurantDetailTableViewCell")
+    
+    restoranTableView.register(UINib(nibName: "MenuViewCell", bundle: nil), forCellReuseIdentifier: "MenuViewCell")
   }
 
 }
@@ -57,7 +59,7 @@ class RestaurantViewController: UIViewController {
 extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
   
   func numberOfSections(in tableView: UITableView) -> Int {
-    return 2
+    return 3
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -65,7 +67,10 @@ extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
     case 0:
       return 256
     case 1:
-      return 260
+      return 256
+    case 2:
+      let row: CGFloat = CGFloat(80 * restaurant!.products.count + 48)
+      return row
     default:
       return 0
     }
@@ -76,6 +81,8 @@ extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
     case 0:
       return 1
     case 1:
+      return 1
+    case 2:
       return 1
     default:
       return 0
@@ -92,6 +99,10 @@ extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
     case 1:
       let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantDetailTableViewCell", for: indexPath) as! RestaurantDetailTableViewCell
       cell.updateCell(restaurant: restaurant!)
+      return cell
+    case 2:
+      let cell = tableView.dequeueReusableCell(withIdentifier: "MenuViewCell", for: indexPath) as! MenuViewCell
+      cell.updateCellWith(product: restaurant!.products)
       return cell
     default:
       return UITableViewCell()

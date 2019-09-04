@@ -24,6 +24,10 @@ class RestaurantDetailTableViewCell: UITableViewCell {
   
   @IBOutlet weak var ownerNameLabel: UILabel!
   
+  @IBOutlet weak var buttonIkuti: UIButton!
+  
+  @IBOutlet weak var buttonTanya: UIButton!
+  
   var resto: Restaurant?
   
   class var CustomCell : RestaurantDetailTableViewCell {
@@ -35,6 +39,18 @@ class RestaurantDetailTableViewCell: UITableViewCell {
     ownerImageView.layer.masksToBounds = true
     ownerImageView.layer.cornerRadius = (ownerImageView.frame.width/2)
     ownerImageView.contentMode = .scaleAspectFill
+    
+    buttonIkuti.layer.cornerRadius = 6.0
+    buttonIkuti.layer.shadowColor = UIColor.black.cgColor
+    buttonIkuti.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+    buttonIkuti.layer.shadowRadius = 3.0
+    buttonIkuti.layer.shadowOpacity = 0.2
+    
+    buttonTanya.layer.cornerRadius = 6.0
+    buttonTanya.layer.shadowColor = UIColor.black.cgColor
+    buttonTanya.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+    buttonTanya.layer.shadowRadius = 3.0
+    buttonTanya.layer.shadowOpacity = 0.2
   }
   
   func updateCell(restaurant: Restaurant) {
