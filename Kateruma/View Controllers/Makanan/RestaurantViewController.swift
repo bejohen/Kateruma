@@ -65,7 +65,7 @@ extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
     case 0:
       return 256
     case 1:
-      return 280
+      return 260
     default:
       return 0
     }

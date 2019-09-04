@@ -24,7 +24,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
   }
   override func awakeFromNib() {
     imageView.translatesAutoresizingMaskIntoConstraints = false
-    imageView.contentMode = .scaleAspectFit
+    imageView.contentMode = .scaleAspectFill
   }
   
   func updateCellWithImage(image: String) {

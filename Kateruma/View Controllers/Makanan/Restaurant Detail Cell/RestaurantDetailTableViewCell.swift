@@ -34,6 +34,7 @@ class RestaurantDetailTableViewCell: UITableViewCell {
   override func awakeFromNib() {
     ownerImageView.layer.masksToBounds = true
     ownerImageView.layer.cornerRadius = (ownerImageView.frame.width/2)
+    ownerImageView.contentMode = .scaleAspectFill
   }
   
   func updateCell(restaurant: Restaurant) {
