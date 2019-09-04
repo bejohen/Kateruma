@@ -1,7 +1,7 @@
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
-//   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
+//   let restaurantModel = try? newJSONDecoder().decode(RestaurantModel.self, from: jsonData)
 
 import Foundation
 
@@ -13,7 +13,8 @@ struct RestaurantModel: Codable {
 // MARK: - Restaurant
 struct Restaurant: Codable {
   let id: Int
-  let name, neighborhood: String
+  let name, since, restaurantDescription, owner: String
+  let ownerPhoto: String
   let photograph: [String]
   let address: String
   let latlang: Latlang
@@ -23,7 +24,9 @@ struct Restaurant: Codable {
   let products: [Product]
   
   enum CodingKeys: String, CodingKey {
-    case id, name, neighborhood, photograph, address, latlang, category
+    case id, name, since
+    case restaurantDescription = "description"
+    case owner, ownerPhoto, photograph, address, latlang, category
     case cuisineType = "cuisine_type"
     case operatingHours = "operating_hours"
     case products
@@ -54,18 +57,20 @@ struct OperatingHours: Codable {
 // MARK: - Product
 struct Product: Codable {
   let productID, restaurantID: Int
-  let productName, productDescription: String
+  let productName: String
+  let category: String?
+  let productDescription: String
   let price: Int
-  let ingredients: [String]
+  let ingredients, photograph: [String]
   let ratingTotal: String
   let reviews: [Review]
   
   enum CodingKeys: String, CodingKey {
     case productID = "productId"
     case restaurantID = "restaurantId"
-    case productName
+    case productName, category
     case productDescription = "description"
-    case price, ingredients, ratingTotal, reviews
+    case price, ingredients, photograph, ratingTotal, reviews
   }
 }
 

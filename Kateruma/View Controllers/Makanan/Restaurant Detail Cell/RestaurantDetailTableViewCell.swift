@@ -22,23 +22,30 @@ class RestaurantDetailTableViewCell: UITableViewCell {
   
   @IBOutlet weak var ownerImageView: UIImageView!
   
-  //var restaurant: Restaurant?
+  var resto: Restaurant?
   
   class var CustomCell : RestaurantDetailTableViewCell {
     let cell = Bundle.main.loadNibNamed("RestaurantDetailTableViewCell", owner: self, options: nil)?.last
     return cell as! RestaurantDetailTableViewCell
   }
   
+  override func awakeFromNib() {
+    ownerImageView.layer.masksToBounds = true
+    ownerImageView.layer.cornerRadius = (ownerImageView.frame.width/2)
+  }
+  
   func updateCell(restaurant: Restaurant) {
+    resto = restaurant
     self.restaurantNameLabel.text = restaurant.name
-    self.sinceLabel.text = "Since 2019"
-    self.descriptionLabel.text = "Selamat datang di dapur saya! Semoga anda semua enjoy dengan makanan yang saya buat. Dijamin uenak!"
+    self.sinceLabel.text = "Since \(restaurant.since)"
+    self.descriptionLabel.text = restaurant.restaurantDescription
+    //self.descriptionLabel.text = "Selamat datang di dapur saya! Semoga anda semua enjoy dengan makanan yang saya buat. Dijamin uenak!"
     
     self.pengikutLabel.text = "Pengikut 581 | Aktif 11 menit"
     
     self.ongkirLabel.text = "Ongkos kirim: 0 - Rp10.000"
-//    self.cellImageView.image = UIImage(named: product.productName)
-//    self.rateLabel.text = product.ratingTotal
+    
+    self.ownerImageView.image = UIImage(named: "")
   }
   
 }
