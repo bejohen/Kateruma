@@ -17,7 +17,7 @@ class RestaurantViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.title = "CategoryDetail"
-    self.updateViewControllerWithDetails()
+    self.configureTableView()
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -38,5 +38,64 @@ class RestaurantViewController: UIViewController {
       //self.restaurantImageView.image = UIImage(named: imageTitle)
     }
   }
+  
+  func configureTableView() {
+    
+    restoranTableView.rowHeight = 310
+    restoranTableView.estimatedRowHeight = 310
+    restoranTableView.delegate = self
+    restoranTableView.dataSource = self
+    restoranTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+    
+    restoranTableView.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
+    
+    restoranTableView.register(UINib(nibName: "RestaurantDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "RestaurantDetailTableViewCell")
+  }
 
 }
+
+extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
+  
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 2
+  }
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    switch indexPath.section {
+    case 0:
+      return 256
+    case 1:
+      return 256
+    default:
+      return 0
+    }
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    switch section {
+    case 0:
+      return 1
+    case 1:
+      return 1
+    default:
+      return 0
+    }
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    switch indexPath.section {
+    case 0:
+      let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
+      let image = (self.restaurant?.photograph)!
+      cell.updateCellWith(image: image)
+      return cell
+    case 1:
+      let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantDetailTableViewCell", for: indexPath) as! RestaurantDetailTableViewCell
+      cell.updateCell(restaurant: restaurant!)
+      return cell
+    default:
+      return UITableViewCell()
+    }
+  }
+}
+

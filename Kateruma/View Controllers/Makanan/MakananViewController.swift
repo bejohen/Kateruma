@@ -21,8 +21,9 @@ class MakananViewController: UIViewController {
   
   var window : UIWindow?
   
-  //var ipPort = "10.60.40.56"
-  var ipPort = "10.60.49.157"
+  var ipPort = "10.60.40.52"
+  //var ipPort = "10.60.49.157"
+  //var ipPort = "127.0.0.1"
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -148,15 +149,15 @@ extension MakananViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension MakananViewController:ItemCollectionCellDelegate {
   func collectionView(collectioncell: ItemCollectionCell?, didTappedInTableview TableCell: CategoryCell) {
-//    if let cell = collectioncell, let selCategory = TableCell.restaurants {
-//      if let restaurantId = cell.id {
-//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-//        let detailController = storyBoard.instantiateViewController(withIdentifier:"RestaurantViewController") as? RestaurantViewController
-//        detailController?.restaurant = restaurants[restaurantId]
-//        self.navigationController?.pushViewController(detailController!, animated: true)
-//
-//      }
-//    }
+    if let cell = collectioncell, let selCategory = TableCell.restaurants {
+      if let restaurantId = cell.id {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let detailController = storyBoard.instantiateViewController(withIdentifier:"RestaurantViewController") as? RestaurantViewController
+        detailController?.restaurant = restaurants[restaurantId]
+        self.navigationController?.pushViewController(detailController!, animated: true)
+
+      }
+    }
   }
 }
 
