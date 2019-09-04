@@ -26,16 +26,23 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mow-Wn-rfS">
-                        <rect key="frame" x="20" y="68" width="281" height="17"/>
+                        <rect key="frame" x="20" y="71" width="281" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hJ-q8-Frh">
-                        <rect key="frame" x="20" y="93" width="238" height="66"/>
+                        <rect key="frame" x="20" y="93" width="238" height="58"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnn-ji-Z3k">
+                        <rect key="frame" x="20" y="159" width="136" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -43,6 +50,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="descriptionLabel" destination="7hJ-q8-Frh" id="PQu-FL-1IT"/>
+                <outlet property="pengikutLabel" destination="Hnn-ji-Z3k" id="5X3-Ba-h7o"/>
                 <outlet property="restaurantNameLabel" destination="oAq-Wt-mlf" id="v3e-Sc-jcW"/>
                 <outlet property="sinceLabel" destination="mow-Wn-rfS" id="6Sf-HZ-zGZ"/>
             </connections>

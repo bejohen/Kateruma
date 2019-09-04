@@ -15,6 +15,9 @@ class RestaurantDetailTableViewCell: UITableViewCell {
   @IBOutlet weak var sinceLabel: UILabel!
   
   @IBOutlet weak var descriptionLabel: UILabel!
+  
+  @IBOutlet weak var pengikutLabel: UILabel!
+  
   //var restaurant: Restaurant?
   
   class var CustomCell : RestaurantDetailTableViewCell {
@@ -26,6 +29,8 @@ class RestaurantDetailTableViewCell: UITableViewCell {
     self.restaurantNameLabel.text = restaurant.name
     self.sinceLabel.text = "Since 2019"
     self.descriptionLabel.text = "Selamat datang di dapur saya! Semoga anda semua enjoy dengan makanan yang saya buat. Dijamin uenak!"
+    
+    self.pengikutLabel.text = ""
 //    self.cellImageView.image = UIImage(named: product.productName)
 //    self.rateLabel.text = product.ratingTotal
   }
