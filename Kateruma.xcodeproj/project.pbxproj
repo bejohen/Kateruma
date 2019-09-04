@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,10 @@
 		0DB899A3231F63F3007F0458 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB899A2231F63F3007F0458 /* ImageCollectionViewCell.swift */; };
 		0DB899A5231F74FE007F0458 /* RestaurantDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB899A4231F74FE007F0458 /* RestaurantDetailTableViewCell.xib */; };
 		0DB899A7231F7561007F0458 /* RestaurantDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB899A6231F7561007F0458 /* RestaurantDetailTableViewCell.swift */; };
+		0DB899AC231FB1FF007F0458 /* CalendarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB899A8231FB1FF007F0458 /* CalendarViewCell.swift */; };
+		0DB899AD231FB1FF007F0458 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB899A9231FB1FF007F0458 /* OrderViewController.swift */; };
+		0DB899AE231FB1FF007F0458 /* CalendarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB899AA231FB1FF007F0458 /* CalendarViewCell.xib */; };
+		0DB899AF231FB1FF007F0458 /* PesananModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB899AB231FB1FF007F0458 /* PesananModel.swift */; };
 		1B49514A231EAD7E005A4D49 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B495149231EAD7E005A4D49 /* MenuViewController.swift */; };
 		1B49514F231EB163005A4D49 /* DismissMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49514E231EB163005A4D49 /* DismissMenuTableViewController.swift */; };
 		1BE62534231788CD007F9704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62533231788CD007F9704 /* AppDelegate.swift */; };
@@ -64,6 +68,10 @@
 		0DB899A2231F63F3007F0458 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DB899A4231F74FE007F0458 /* RestaurantDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantDetailTableViewCell.xib; sourceTree = "<group>"; };
 		0DB899A6231F7561007F0458 /* RestaurantDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTableViewCell.swift; sourceTree = "<group>"; };
+		0DB899A8231FB1FF007F0458 /* CalendarViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewCell.swift; sourceTree = "<group>"; };
+		0DB899A9231FB1FF007F0458 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		0DB899AA231FB1FF007F0458 /* CalendarViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewCell.xib; sourceTree = "<group>"; };
+		0DB899AB231FB1FF007F0458 /* PesananModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PesananModel.swift; sourceTree = "<group>"; };
 		1B495149231EAD7E005A4D49 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1B49514E231EB163005A4D49 /* DismissMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissMenuTableViewController.swift; sourceTree = "<group>"; };
 		1BE62530231788CD007F9704 /* Kateruma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kateruma.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +113,7 @@
 		0D250CA0231C1C3400F468E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0DB899AB231FB1FF007F0458 /* PesananModel.swift */,
 				0D250CA1231C1C5A00F468E1 /* RestaurantModel.swift */,
 			);
 			path = Model;
@@ -124,6 +133,8 @@
 		0D250CA6231C1D4900F468E1 /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				0DB899B0231FB223007F0458 /* Cell */,
+				0DB899A9231FB1FF007F0458 /* OrderViewController.swift */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -184,13 +195,21 @@
 			path = "Restaurant Detail Cell";
 			sourceTree = "<group>";
 		};
+		0DB899B0231FB223007F0458 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0DB899AA231FB1FF007F0458 /* CalendarViewCell.xib */,
+				0DB899A8231FB1FF007F0458 /* CalendarViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		1885B5DE3128C600116775B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				98D86B21DD30E2C63214588E /* Pods-Kateruma.debug.xcconfig */,
 				BFB0A647ACFD23B218C46CB5 /* Pods-Kateruma.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -306,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DB899A5231F74FE007F0458 /* RestaurantDetailTableViewCell.xib in Resources */,
+				0DB899AE231FB1FF007F0458 /* CalendarViewCell.xib in Resources */,
 				1BE6253E231788CE007F9704 /* LaunchScreen.storyboard in Resources */,
 				0D250CB2231C28CB00F468E1 /* ItemCollectionCell.xib in Resources */,
 				1BE6253B231788CE007F9704 /* Assets.xcassets in Resources */,
@@ -374,9 +394,11 @@
 				0D250CA4231C1D0600F468E1 /* MakananViewController.swift in Sources */,
 				0DB899A7231F7561007F0458 /* RestaurantDetailTableViewCell.swift in Sources */,
 				0D250CB1231C28CB00F468E1 /* ItemCollectionCell.swift in Sources */,
+				0DB899AF231FB1FF007F0458 /* PesananModel.swift in Sources */,
 				0D250CC0231CC24F00F468E1 /* PageCell.swift in Sources */,
 				0D250C9B231C17F600F468E1 /* OrderListTableViewController.swift in Sources */,
 				0D250CBF231CC24F00F468E1 /* SwipingController + extension.swift in Sources */,
+				0DB899AC231FB1FF007F0458 /* CalendarViewCell.swift in Sources */,
 				0D250C9E231C17F600F468E1 /* FirstTimeRegistrationViewController.swift in Sources */,
 				0D250CC2231E326700F468E1 /* RestaurantViewController.swift in Sources */,
 				1BE62536231788CD007F9704 /* ProfilViewController.swift in Sources */,
@@ -387,6 +409,7 @@
 				0D250CAD231C288200F468E1 /* CategoryCell.swift in Sources */,
 				0D250CBB231CC24F00F468E1 /* SwipingController + UIPageControl.swift in Sources */,
 				0D250CBC231CC24F00F468E1 /* SwipingController.swift in Sources */,
+				0DB899AD231FB1FF007F0458 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
