@@ -37,6 +37,7 @@
 		1BE62539231788CD007F9704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE62537231788CD007F9704 /* Main.storyboard */; };
 		1BE6253B231788CE007F9704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE6253A231788CE007F9704 /* Assets.xcassets */; };
 		1BE6253E231788CE007F9704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE6253C231788CE007F9704 /* LaunchScreen.storyboard */; };
+		3CC8016EB9C374DC36335BBB /* Pods_Kateruma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6E6F1FE08696BDD8D5B094 /* Pods_Kateruma.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,9 @@
 		1BE6253A231788CE007F9704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BE6253D231788CE007F9704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BE6253F231788CE007F9704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D86B21DD30E2C63214588E /* Pods-Kateruma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kateruma.debug.xcconfig"; path = "Target Support Files/Pods-Kateruma/Pods-Kateruma.debug.xcconfig"; sourceTree = "<group>"; };
+		BE6E6F1FE08696BDD8D5B094 /* Pods_Kateruma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kateruma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB0A647ACFD23B218C46CB5 /* Pods-Kateruma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kateruma.release.xcconfig"; path = "Target Support Files/Pods-Kateruma/Pods-Kateruma.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC8016EB9C374DC36335BBB /* Pods_Kateruma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +184,16 @@
 			path = "Restaurant Detail Cell";
 			sourceTree = "<group>";
 		};
+		1885B5DE3128C600116775B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98D86B21DD30E2C63214588E /* Pods-Kateruma.debug.xcconfig */,
+				BFB0A647ACFD23B218C46CB5 /* Pods-Kateruma.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1B49514B231EADC5005A4D49 /* Seller */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +209,8 @@
 			children = (
 				1BE62532231788CD007F9704 /* Kateruma */,
 				1BE62531231788CD007F9704 /* Products */,
+				1885B5DE3128C600116775B5 /* Pods */,
+				AE9088629A2CA731E28C59CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +237,14 @@
 			path = Kateruma;
 			sourceTree = "<group>";
 		};
+		AE9088629A2CA731E28C59CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE6E6F1FE08696BDD8D5B094 /* Pods_Kateruma.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BE62542231788CE007F9704 /* Build configuration list for PBXNativeTarget "Kateruma" */;
 			buildPhases = (
+				AA35931B9C1A78C66863F64F /* [CP] Check Pods Manifest.lock */,
 				1BE6252C231788CD007F9704 /* Sources */,
 				1BE6252D231788CD007F9704 /* Frameworks */,
 				1BE6252E231788CD007F9704 /* Resources */,
+				4845782A507FFD6F23EA1E73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +317,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4845782A507FFD6F23EA1E73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kateruma/Pods-Kateruma-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kateruma/Pods-Kateruma-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kateruma/Pods-Kateruma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA35931B9C1A78C66863F64F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kateruma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BE6252C231788CD007F9704 /* Sources */ = {
@@ -461,6 +530,7 @@
 		};
 		1BE62543231788CE007F9704 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D86B21DD30E2C63214588E /* Pods-Kateruma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -479,6 +549,7 @@
 		};
 		1BE62544231788CE007F9704 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB0A647ACFD23B218C46CB5 /* Pods-Kateruma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
