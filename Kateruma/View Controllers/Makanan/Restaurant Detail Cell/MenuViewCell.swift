@@ -34,6 +34,10 @@ class MenuViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataSource 
     self.menuItemTableView.reloadData()
   }
   
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 90
+  }
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return products.count
   }

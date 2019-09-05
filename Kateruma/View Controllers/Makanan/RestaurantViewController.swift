@@ -69,7 +69,7 @@ extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
     case 1:
       return 256
     case 2:
-      let row: CGFloat = CGFloat(80 * restaurant!.products.count + 48)
+      let row: CGFloat = CGFloat(90 * restaurant!.products.count + 48)
       return row
     default:
       return 0

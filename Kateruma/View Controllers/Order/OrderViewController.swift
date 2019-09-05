@@ -23,6 +23,7 @@ class OrderViewController: UIViewController, FSCalendarDataSource, FSCalendarDel
     }()
   
     var dataTanggal: [Pesanan] = []
+  var ipPort = "10.60.49.157"
 
     //Fake Event
     var datesWithEvent = ["2019/09/19"]
@@ -38,7 +39,7 @@ class OrderViewController: UIViewController, FSCalendarDataSource, FSCalendarDel
   
     //to receive DB from JSON based on filtered date
     func getPesananDataByDate(date: String, completionHandler: @escaping () -> Void) {
-        let url = "http://127.0.0.1:3001/pesanan?tanggal=\(date)"
+        let url = "http://\(ipPort):3001/pesanan?tanggal=\(date)"
         guard let restoUrl = URL(string: url) else { return }
         URLSession.shared.dataTask(with: restoUrl) { (data, response
             , error) in
