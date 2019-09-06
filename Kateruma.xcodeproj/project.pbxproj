@@ -38,6 +38,10 @@
 		0DBD056123204AA600739F07 /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD056023204AA600739F07 /* MenuViewCell.swift */; };
 		0DBD056323204D8D00739F07 /* MenuItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DBD056223204D8D00739F07 /* MenuItemViewCell.xib */; };
 		0DBD056523204EF000739F07 /* MenuItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD056423204EF000739F07 /* MenuItemViewCell.swift */; };
+		0DBD05672322068E00739F07 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DBD05662322068E00739F07 /* CategoryTableViewCell.xib */; };
+		0DBD0569232207C600739F07 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD0568232207C600739F07 /* CategoryTableViewCell.swift */; };
+		0DBD056B23220A1900739F07 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DBD056A23220A1900739F07 /* CategoryCollectionViewCell.xib */; };
+		0DBD056D23220ADE00739F07 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD056C23220ADE00739F07 /* CategoryCollectionViewCell.swift */; };
 		1B49514A231EAD7E005A4D49 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B495149231EAD7E005A4D49 /* MenuViewController.swift */; };
 		1B49514F231EB163005A4D49 /* DismissMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49514E231EB163005A4D49 /* DismissMenuTableViewController.swift */; };
 		1BE62534231788CD007F9704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62533231788CD007F9704 /* AppDelegate.swift */; };
@@ -80,6 +84,10 @@
 		0DBD056023204AA600739F07 /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
 		0DBD056223204D8D00739F07 /* MenuItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemViewCell.xib; sourceTree = "<group>"; };
 		0DBD056423204EF000739F07 /* MenuItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemViewCell.swift; sourceTree = "<group>"; };
+		0DBD05662322068E00739F07 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		0DBD0568232207C600739F07 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		0DBD056A23220A1900739F07 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		0DBD056C23220ADE00739F07 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B495149231EAD7E005A4D49 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1B49514E231EB163005A4D49 /* DismissMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissMenuTableViewController.swift; sourceTree = "<group>"; };
 		1BE62530231788CD007F9704 /* Kateruma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kateruma.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,8 +149,8 @@
 		0D250CA6231C1D4900F468E1 /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				0DB899B0231FB223007F0458 /* Cell */,
 				0DB899A9231FB1FF007F0458 /* OrderViewController.swift */,
+				0DB899B0231FB223007F0458 /* Cell */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -173,6 +181,10 @@
 				0D250CB0231C28CB00F468E1 /* ItemCollectionCell.xib */,
 				0D250CAB231C288200F468E1 /* CategoryCell.swift */,
 				0D250CAC231C288200F468E1 /* CategoryCell.xib */,
+				0DBD0568232207C600739F07 /* CategoryTableViewCell.swift */,
+				0DBD05662322068E00739F07 /* CategoryTableViewCell.xib */,
+				0DBD056A23220A1900739F07 /* CategoryCollectionViewCell.xib */,
+				0DBD056C23220ADE00739F07 /* CategoryCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -339,8 +351,10 @@
 				0DB899A5231F74FE007F0458 /* RestaurantDetailTableViewCell.xib in Resources */,
 				0DB899AE231FB1FF007F0458 /* CalendarViewCell.xib in Resources */,
 				1BE6253E231788CE007F9704 /* LaunchScreen.storyboard in Resources */,
+				0DBD05672322068E00739F07 /* CategoryTableViewCell.xib in Resources */,
 				0D250CB2231C28CB00F468E1 /* ItemCollectionCell.xib in Resources */,
 				1BE6253B231788CE007F9704 /* Assets.xcassets in Resources */,
+				0DBD056B23220A1900739F07 /* CategoryCollectionViewCell.xib in Resources */,
 				0DB899A1231F6139007F0458 /* ImageCollectionViewCell.xib in Resources */,
 				0DBD056323204D8D00739F07 /* MenuItemViewCell.xib in Resources */,
 				0DBD055F2320499300739F07 /* MenuViewCell.xib in Resources */,
@@ -404,12 +418,14 @@
 				0D250C9D231C17F600F468E1 /* OrderListViewController.swift in Sources */,
 				0DB899A3231F63F3007F0458 /* ImageCollectionViewCell.swift in Sources */,
 				0DB8999F231F5F59007F0458 /* ImageTableViewCell.swift in Sources */,
+				0DBD056D23220ADE00739F07 /* CategoryCollectionViewCell.swift in Sources */,
 				0D250CA2231C1C5A00F468E1 /* RestaurantModel.swift in Sources */,
 				0D250CA4231C1D0600F468E1 /* MakananViewController.swift in Sources */,
 				0DB899A7231F7561007F0458 /* RestaurantDetailTableViewCell.swift in Sources */,
 				0D250CB1231C28CB00F468E1 /* ItemCollectionCell.swift in Sources */,
 				0DB899AF231FB1FF007F0458 /* PesananModel.swift in Sources */,
 				0D250CC0231CC24F00F468E1 /* PageCell.swift in Sources */,
+				0DBD0569232207C600739F07 /* CategoryTableViewCell.swift in Sources */,
 				0D250C9B231C17F600F468E1 /* OrderListTableViewController.swift in Sources */,
 				0D250CBF231CC24F00F468E1 /* SwipingController + extension.swift in Sources */,
 				0DB899AC231FB1FF007F0458 /* CalendarViewCell.swift in Sources */,

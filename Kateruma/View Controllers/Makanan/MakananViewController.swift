@@ -77,13 +77,15 @@ class MakananViewController: UIViewController {
     menuItemTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     
     menuItemTableView.register(UINib(nibName: "CategoryCell", bundle: nil), forCellReuseIdentifier: "CategoryCell")
+    
+    menuItemTableView.register(UINib(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "CategoryTableViewCell")
   }
 }
 
 extension MakananViewController: UITableViewDelegate, UITableViewDataSource {
   
   func numberOfSections(in tableView: UITableView) -> Int {
-    return 2
+    return 3
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -92,6 +94,8 @@ extension MakananViewController: UITableViewDelegate, UITableViewDataSource {
       return 310
     case 1:
       return 310
+    case 2:
+      return 432
     default:
       return 0
     }
@@ -103,6 +107,8 @@ extension MakananViewController: UITableViewDelegate, UITableViewDataSource {
     case 0:
       return 1
     case 1:
+      return 1
+    case 2:
       return 1
     default:
       return 0
@@ -146,11 +152,13 @@ extension MakananViewController: UITableViewDelegate, UITableViewDataSource {
       cell.descLabel.attributedText = attributedText
       
       return cell
+    case 2:
+      let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryTableViewCell", for: indexPath) as! CategoryTableViewCell
+      return cell
     default:
       return UITableViewCell()
     }
   }
-  
 }
 
 extension MakananViewController:ItemCollectionCellDelegate {

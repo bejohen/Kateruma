@@ -32,7 +32,9 @@ class CalendarViewCell : UITableViewCell {
         titleLabel.text = nama
     }
     func setupMakanan(makanan: String){
-        makananLabel.text = "Makanan siap pada pukul \(makanan)"
+      let attributedText = NSMutableAttributedString(string: "Makanan siap pada pukul ", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 13, weight: .light)])
+      attributedText.append(NSMutableAttributedString(string: makanan, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 13, weight: .medium)]))
+      makananLabel.attributedText = attributedText
     }
     func setupStatus(status: String){
       
@@ -41,16 +43,20 @@ class CalendarViewCell : UITableViewCell {
       statusLabel.attributedText = attributedText
     }
     func setupBank(bank: String){
-        bankLabel.text = bank
+      bankLabel.text = bank
+      bankLabel.font = UIFont.systemFont(ofSize: 13, weight: .medium)
     }
     func setupPemilikBank(pemilikBank: String){
-        pemilikBankLabel.text = pemilikBank
+      pemilikBankLabel.text = pemilikBank
+      pemilikBankLabel.font = UIFont.systemFont(ofSize: 13, weight: .medium)
     }
     func setupNomorRekening(nomorRekening: String){
         nomorRekeningLabel.text = nomorRekening
+      nomorRekeningLabel.font = UIFont.systemFont(ofSize: 13, weight: .medium)
     }
     func setupTotal(total: String){
         totalLabel.text = total
+      totalLabel.font = UIFont.systemFont(ofSize: 13, weight: .medium)
     }
     func setupDetail1(detail1: String){
         detail1Label.text = detail1

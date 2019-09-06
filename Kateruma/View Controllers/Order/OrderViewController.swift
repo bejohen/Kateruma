@@ -24,7 +24,7 @@ class OrderViewController: UIViewController, FSCalendarDataSource, FSCalendarDel
   
     var dataTanggal: [Pesanan] = []
   var ipPort = "10.60.49.157"
-
+  //var ipPort = "10.60.40.52"
     //Fake Event
     var datesWithEvent = ["2019/09/19"]
     
