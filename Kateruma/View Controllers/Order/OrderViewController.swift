@@ -111,7 +111,7 @@ class OrderViewController: UIViewController, FSCalendarDataSource, FSCalendarDel
       
         pesananTableView.delegate = self
         pesananTableView.dataSource = self
-        pesananTableView.rowHeight = 220
+        pesananTableView.rowHeight = 194
         pesananTableView.register(UINib(nibName: "CalendarViewCell", bundle: nil), forCellReuseIdentifier: "CalendarViewCell")
     }
 }
@@ -155,7 +155,7 @@ extension OrderViewController : UITableViewDelegate, UITableViewDataSource {
             
             cell.setupDetail2(detail2: data.detail2)
     
-            cell.setupGambar(nama: data.date)
+            cell.setupGambar(nama: data.pemilikBank)
         
         return cell
     }

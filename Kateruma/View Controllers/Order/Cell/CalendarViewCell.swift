@@ -32,10 +32,13 @@ class CalendarViewCell : UITableViewCell {
         titleLabel.text = nama
     }
     func setupMakanan(makanan: String){
-        makananLabel.text = makanan
+        makananLabel.text = "Makanan siap pada pukul \(makanan)"
     }
     func setupStatus(status: String){
-        statusLabel.text = status
+      
+      let attributedText = NSMutableAttributedString(string: "Status kirim: ", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 13, weight: .light)])
+      attributedText.append(NSMutableAttributedString(string: status, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 13, weight: .medium)]))
+      statusLabel.attributedText = attributedText
     }
     func setupBank(bank: String){
         bankLabel.text = bank

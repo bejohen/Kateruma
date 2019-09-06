@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-Pd-wkL" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="84" width="414" height="355"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="352"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96864038705825806" green="0.96860414743423462" blue="0.96862870454788208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="1" green="0.99997597932815552" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -143,8 +143,8 @@
                                     <outlet property="delegate" destination="EuS-Ba-oFp" id="Gje-hl-tPv"/>
                                 </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order Anda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roW-Xp-1si">
-                                <rect key="frame" x="110" y="48" width="195" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu Pesanan Anda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roW-Xp-1si">
+                                <rect key="frame" x="110" y="48" width="206" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -3158,7 +3158,7 @@ Baluran tepung dipadu dengan saus yang nikmat</string>
         <image name="profil icon" width="31" height="31"/>
         <image name="profil icon Selected" width="31" height="31"/>
         <image name="rating" width="91" height="16"/>
-        <image name="scooter" width="512" height="512"/>
+        <image name="scooter" width="16" height="16"/>
         <image name="terverifikasi" width="99" height="17"/>
         <image name="tick-icon" width="28" height="28"/>
         <image name="to-do-mothers-day-1553102880" width="640" height="634"/>
